@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'admin-Dashboard';
+  // event hapand
+  sidebarOpened :boolean=true
+
+  toggle(){
+    this.sidebarOpened = !this.sidebarOpened 
+  }
 }

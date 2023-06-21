@@ -1,0 +1,93 @@
+
+angular :-> It is a friendEndDeveloper-Tool
+
+1. To create an angular project  --- ng new project-name
+2. To run an Angular project    --- ng serve / ng s
+3. To geneRate a component     --- ng g c component-name
+4. To geneRate services       --- ng g s  service-folder/services-name
+
+
+
+
+
+
+
+         basic concept in Angular
+____________________________________________
+
+
+1. Modules : ->  To import Third party libraries, also used to hold component
+2. Component : -> Basic building blocks of angular html,css, ts ,and also have salector
+3. Selector : -> To replace selector tag with its html page.
+4. Decorators (@) : -> To hold meta data (one data to include another data is known as meta data)
+
+   To view a component in another page  ----*
+
+
+                      *set up a path for component -- app-routing-Module 
+                      *router-outlet -- To navigate according to the user request page
+
+
+ 6.Data binding  : -> A data share with in a component. They are 2 types 
+                      1.OneWay binding : Data communication between 'ts' to 'html' or 'html' to 'ts' data sharing in one direction [ts => (typeScript): Component],[html => : view]
+                       i) ts to html |
+                                     V 
+                              a)  String interpolation
+                                  syntax : {{class property-name}}
+                              b)  Property binding 
+                                  syntax : [attribute-name]="property"
+
+                                
+                       ii) html to ts  |
+                                       V   
+                              a)  event binding
+                                 syntax:
+                                          (event-name)="function call"
+                                        eg :   (click)="login()"
+
+                              b) event binding using $ event          
+                                           (event-name)="function name $(event)"
+
+                              c) using templates reference variable (using '#') 
+                                       
+                                      syntax :   
+                                                 #variable-name
+
+                        
+
+                      2.TwoWay binding :     Data sharing in both direction             
+
+                               a) ngModel   -- import formModule in appModule
+                                  syntax :
+                                               [(ngModel)]="class property"
+
+                                     .)[(ngModel)]="class property" is used to the form tag after using "name" attribute  
+
+                                   i)Angular Forms  (2 types)
+                                      1.)template driven Forms : html page then it is known as template driven forms
+                                      2.)model driven forms    : it has a view we can write ts then we create html page  i.e known as model driven
+                          
+
+                      7.navigateByUrl: used to redirect one page to another page.It is visible in 'router-class'
+                      8.dependency injuction : to share data between depedent classes
+                        
+                        1:) constructor
+                        sytax:
+                         constructor(access-spacifier variable-name:class-name){
+
+
+                         }
+
+                         * variable : depedent class variable
+                        
+                  9. angular services
+                  10. angular directives:DOM Manipulation
+                     i) Component directives (view)
+                     ii)structural directives : to add or remove  html item (*ngFor="let variable-name of array-name")
+                     iii)attribute directives: to apply style to html elements (ngClass---) 
+
+                  11. parent-child  data sharing
+
+                       -)child to parent communication
+            
+                       -)parent to child communication
